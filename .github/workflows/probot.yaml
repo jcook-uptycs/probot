@@ -2,6 +2,7 @@
 name: probot
 
 on: # yamllint disable-line rule:truthy
+  push:
   workflow_dispatch:
   # schedule:
   #   - cron: "1 16 * * 1"
