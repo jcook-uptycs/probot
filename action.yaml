@@ -3,4 +3,6 @@ description: "Probot app description."
 runs:
   using: docker
   image: Dockerfile
-  entrypoint: /usr/local/bin/node ./index.js
+  entrypoint: /usr/local/bin/node
+  args:
+    - ./index.js
