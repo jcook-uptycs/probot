@@ -5,4 +5,4 @@ runs:
   image: Dockerfile
   entrypoint: /usr/local/bin/node
   args:
-    - ./index.js
+    - /action/index.js
