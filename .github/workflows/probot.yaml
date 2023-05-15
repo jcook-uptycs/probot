@@ -9,7 +9,7 @@ on: # yamllint disable-line rule:truthy
 jobs:
   danger:
     name: danger
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
