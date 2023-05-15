@@ -1,5 +1,6 @@
 name: "Probot app name"
 description: "Probot app description."
 runs:
-  using: "node12"
-  main: "index.js"
+  using: docker
+  image: Dockerfile
+  entrypoint: node /action/index.js
