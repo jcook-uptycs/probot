@@ -12,7 +12,8 @@ WORKDIR /action
 ENV NODE_PATH=/usr/local/lib/node_modules
 ENV PATH=/action/node_modules/.bin/:$PATH
 COPY package*.json ./
-RUN npm clean-install 
+RUN npm clean-install
 
 COPY * ./
 
+ENTRYPOINT [ "node", "/action/index.js" ]
